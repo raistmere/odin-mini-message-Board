@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 NEW MESSAGE
+  <form method="POST" action="/new">
+    label(for="author") Your Name
+      input(type="text" id="author" name="author")
+    label(for="message") Your Message
+      textarea(id="message" name="message", cols="30", rows="10")
+    button(type="submit" id="submitButton") SUBMIT MESSAGE
+  </form>
